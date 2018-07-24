@@ -1,9 +1,8 @@
 package main
 
-import (
-	"fmt"
-)
+import "github.com/vlasad/redislike/server"
 
 func main() {
-	fmt.Println("end")
+	s := server.New()
+	s.Start(8080)
 }
